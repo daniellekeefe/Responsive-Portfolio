@@ -69,7 +69,6 @@ h1 {
 
 /* Right-aligned section inside the top navigation */
 .topnav-right {
-  position: static;
   float: right;
   color: #666666;
   Background-color: #ffffff;
@@ -83,6 +82,7 @@ h2 {
   padding-bottom: 10px;
   font-family: 'Georgia', Times, Times New Roman, serif;
   font-size: x-large;
+  border-bottom: #666666 2px;
 }
 
 /* general content box*/
@@ -101,41 +101,53 @@ footer {
   text-align: center;
   color: lightgray;
   border-top: 8px solid #4aaaa5;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
 }
-@media screen and (max-width: 768px) {
-  .topnav-right {
-    width: 768px;
-    justify-items: center;
-    text-align: center;
+
+@media screen and (max-width: 980px) {
+
+  html,
+  body {
+    justify-content: center;
   }
-  h1 {
-    float: none;
-    background-color: #4aaaa5;
-    color: #ffffff;
-    font-family: 'Georgia', Times, Times New Roman, serif;
-    font-size: xx-large;
-    width:768px;
-    text-align: center;
+
+}
+
+@media screen and (max-width: 768px) {
+
+  html,
+  body {
+    width: 90%;
+    margin: 0 auto;
   }
 
 }
 
 @media screen and (max-width: 640px) {
-  .topnav-right {
-    width: 640px;
-    justify-items: center;
+
+  html,
+  body {
+    width: 90%;
+    margin: 0 auto;
   }
+
   h1 {
-    float: none;
+    justify-self: center;
     background-color: #4aaaa5;
-    color: #ffffff;
-    font-family: 'Georgia', Times, Times New Roman, serif;
-    font-size: xx-large;
-    width:640px;
-    text-align: center;
+    width: 640px;
   }
+
+  .topnav-right {
+    float: left;
+    Background-color: #ffffff;
+  }
+
+  html,
+  body {
+    justify-self: center;
+  }
+
 }
