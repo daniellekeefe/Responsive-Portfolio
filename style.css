@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  background-image: url(images/what-the-hex.png);
+  width: 960px;
+  margin: 0 auto;
+}
+
+.clearfix {
+  content: " ";
+  display: block;
+  clear: both;
+  overflow: auto;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  position: static;
+  background-color: #ffffff;
+  color: #666666;
+  width: 100%;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  position: static;
+  float: left;
+  text-align: center;
+  padding: 0px 14px 0px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+/* Change the color of links on hover */
+a:hover {
+  background-color: #4aaaa5;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+a:active {
+  background-color: #666666;
+  color: black;
+}
+
+a:visited {
+  color: #666666;
+}
+
+.topnav-left {
+  position: static;
+  float: left;
+
+}
+
+h1 {
+  background-color: #4aaaa5;
+  color: #ffffff;
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  font-size: xx-large;
+
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  position: static;
+  float: right;
+  color: #666666;
+  Background-color: #ffffff;
+}
+
+
+h2 {
+  color: #4aaaa5;
+  border-bottom-color: #cccccc;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  font-size: x-large;
+}
+
+/* general content box*/
+.content {
+  padding: 10px;
+  margin: 0 auto;
+  color: #777777;
+  background-color: #ffffff;
+  border-color: #dddddd;
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+footer {
+  background-color: #666666;
+  padding: 10px;
+  text-align: center;
+  color: lightgray;
+  border-top: 8px solid #4aaaa5;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .topnav-right {
+    width: 768px;
+    justify-items: center;
+    text-align: center;
+  }
+  h1 {
+    float: none;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: xx-large;
+    width:768px;
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width: 640px) {
+  .topnav-right {
+    width: 640px;
+    justify-items: center;
+  }
+  h1 {
+    float: none;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: xx-large;
+    width:640px;
+    text-align: center;
+  }
+}
